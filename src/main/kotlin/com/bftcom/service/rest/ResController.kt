@@ -1,7 +1,8 @@
-package ru.bft.service.rest
+package com.bftcom.service.rest
 
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Component
+import com.bftcom.service.services.WordService
 import javax.ws.rs.GET
 import javax.ws.rs.Path
 import javax.ws.rs.PathParam

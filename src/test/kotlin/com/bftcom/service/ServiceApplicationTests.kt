@@ -1,9 +1,10 @@
-package ru.bft.service
+package com.bftcom.service
 
+import com.bftcom.service.services.WordService
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
+import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
-import ru.bft.service.rest.WordService
 
 
 @SpringBootTest
@@ -13,10 +14,5 @@ class ServiceApplicationTests
 	@Test
 	fun contextLoads() {
 	}
-
-
-
-
-
 
 }

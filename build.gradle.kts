@@ -9,7 +9,7 @@ plugins {
 	kotlin("plugin.spring") version "1.6.10"
 }
 
-group = "ru.bft"
+group = "com.bftcom"
 version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_11
 
@@ -25,8 +25,6 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	implementation("com.github.demidko:aot:2021.11.17")
-	testImplementation("org.junit.jupiter:junit-jupiter-api:5.4.2")
-	testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.4.2")
 }
 
 tasks.withType<KotlinCompile> {
@@ -36,7 +34,7 @@ tasks.withType<KotlinCompile> {
 	}
 }
 
-tasks.withType<Test> {
+
+tasks.withType<Test>() {
 	useJUnitPlatform()
 }
-

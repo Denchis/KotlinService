@@ -1,10 +1,10 @@
-package ru.bft.service.rest
+package com.bftcom.service.services
 import com.github.demidko.aot.WordformMeaning.lookupForMeanings
 
 import org.springframework.stereotype.Component
 @Component
-class WordService {
-    fun spell (word:String):List<String>{
+open class WordService {
+    open fun spell (word:String):List<String>{
         val words = mutableListOf<String>()
         val meanings = lookupForMeanings(word)
         for (i in 0..5){

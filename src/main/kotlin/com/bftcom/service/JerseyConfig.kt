@@ -1,4 +1,4 @@
-package ru.bft.service.rest
+package com.bftcom.service
 
 import org.glassfish.jersey.server.ResourceConfig
 import org.springframework.stereotype.Component

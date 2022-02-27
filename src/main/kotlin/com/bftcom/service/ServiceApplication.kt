@@ -1,4 +1,4 @@
-package ru.bft.service
+package com.bftcom.service
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
